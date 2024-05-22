@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #2f1f0e
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    background-color: #fefae0;
+}
+
+.main {
+    height: 100vh;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 1.5rem;
+    border: 3px solid #e9edc9;
+    border-radius: 12px;
+}
+
+.title {
+    font-size: xx-large;
+}
+
+.task-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.task-title {
+    font-size: x-large;
+    margin-bottom: 1rem;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    gap: 10px;
+    list-style: none;
+}
+
+.remove {
+    cursor: pointer;
+}
+
+.form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-top: 1px solid black;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.form-title {
+    padding-bottom: 2rem;
+    font-size: xx-large;
+}
+
+.traitement {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1em
+}
+
+.traitement .title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-properties { 
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap: 0.5em
+}
+
+input {
+    background-color: #FAEDCD;
+    border: none;
+    outline: 0 solid #ccd5ae;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    transition: outline 0.2s;
+}
+
+input.radio:checked, input.radio:focus {
+    appearance: auto;
+    outline: 0
+}
+
+input:focus {
+    outline: 3px solid #ccd5ae
+}
